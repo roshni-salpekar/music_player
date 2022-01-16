@@ -32,7 +32,11 @@
           <!-- Song image -->
           <div class="song-img">
             <div class="div-img">
-              <img id="track-img" src="" alt="" />
+              <img
+                id="track-img"
+                src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg"
+                alt=""
+              />
             </div>
           </div>
 
@@ -41,60 +45,61 @@
             <div class="info">
               <p id="title">Title</p>
               <p id="artist">Artist</p>
-              <p id="track_no">Track</p>
+              <p id="track_no">Track01</p>
             </div>
           </div>
           <!-- song info end  -->
         </div>
+        <div class="music-controls">
+          <!-- song duration start  -->
+          <div class="duration">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              id="duration_slider"
+              onchange="change_duration()"
+            />
+          </div>
+          <!-- song duration end  -->
+          <!-- music player controls start-->
+          <div class="controls">
+            <button id="pre" onclick="previous_song()">
+              <i class="fas fa-step-backward"></i>
+            </button>
+            <button id="play" onclick="justplay()">
+              <i class="fas fa-play-circle"></i>
+            </button>
+            <button id="next" onclick="next_song()">
+              <i class="fas fa-step-forward"></i>
+            </button>
+            <button id="auto" onclick="autoplay_switch()">
+              <i class="fas fa-circle-notch"></i>
+            </button>
+          </div>
 
-        <!-- song duration start  -->
-        <div class="duration">
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="0"
-            id="duration_slider"
-            onchange="change_duration()"
-          />
-        </div>
-        <!-- song duration end  -->
-        <!-- music player controls start-->
-        <div class="controls">
-          <button id="pre" onclick="previous_song()">
-            <i class="fas fa-step-backward"></i>
-          </button>
-          <button id="play" onclick="justplay()">
-            <i class="fas fa-play-circle"></i>
-          </button>
-          <button id="next" onclick="next_song()">
-            <i class="fas fa-step-forward"></i>
-          </button>
-          <button id="auto" onclick="autoplay_switch()">
-            <i class="fas fa-circle-notch"></i>
-          </button>
-        </div>
+          <!-- music player controls end-->
 
-        <!-- music player controls end-->
-
-        <!-- volume change start-->
-        <div class="volume">
-          <p id="volume_show">90</p>
-          <i
-            class="fas fa-volume-up"
-            id="volume-icon"
-            onclick="mute_sound()"
-          ></i>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="90"
-            onchange="volume_change()"
-            id="volume-input"
-          />
+          <!-- volume change start-->
+          <div class="volume">
+            <i
+              class="fas fa-volume-up"
+              id="volume-icon"
+              onclick="mute_sound()"
+            ></i>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="90"
+              onchange="volume_change()"
+              id="volume-input"
+            />
+            <p id="volume_show">90</p>
+          </div>
+          <!-- volume change end -->
         </div>
-        <!-- volume change end -->
       </div>
       <div class="right">
         <p>My Playlist</p>
@@ -102,26 +107,67 @@
           <tr>
             <th>#</th>
             <th>Title</th>
+            <th>Singer</th>
             <th>Favorities</th>
           </tr>
           <tr>
             <td><i class="far fa-play-circle"></i></td>
-            <td>Song1</td>
+            <td>Thousand Years</td>
+            <td>Christina Perri</td>
             <td><i class="far fa-heart"></i></td>
           </tr>
           <tr>
             <td><i class="far fa-play-circle"></i></td>
-            <td>Song1</td>
+            <td>Begin Again</td>
+            <td>Taylor Swift</td>
             <td><i class="far fa-heart"></i></td>
           </tr>
           <tr>
             <td><i class="far fa-play-circle"></i></td>
-            <td>Song1</td>
+            <td>Blank Space</td>
+            <td>Taylor Swift</td>
             <td><i class="far fa-heart"></i></td>
           </tr>
           <tr>
             <td><i class="far fa-play-circle"></i></td>
-            <td>Song1</td>
+            <td>Stay</td>
+            <td>Justin Bieber</td>
+            <td><i class="far fa-heart"></i></td>
+          </tr>
+          <tr>
+            <td><i class="far fa-play-circle"></i></td>
+            <td>Scars to your beautiful</td>
+            <td>Alessia Cara</td>
+            <td><i class="far fa-heart"></i></td>
+          </tr>
+          <tr>
+            <td><i class="far fa-play-circle"></i></td>
+            <td>Into the unknown</td>
+            <td>Idina Menzel</td>
+            <td><i class="far fa-heart"></i></td>
+          </tr>
+          <tr>
+            <td><i class="far fa-play-circle"></i></td>
+            <td>Runaway</td>
+            <td>AURORA</td>
+            <td><i class="far fa-heart"></i></td>
+          </tr>
+          <tr>
+            <td><i class="far fa-play-circle"></i></td>
+            <td>How far i'll go</td>
+            <td>Auli'i Cravalho</td>
+            <td><i class="far fa-heart"></i></td>
+          </tr>
+          <tr>
+            <td><i class="far fa-play-circle"></i></td>
+            <td>Know who you are</td>
+            <td>Auli'i Cravalho</td>
+            <td><i class="far fa-heart"></i></td>
+          </tr>
+          <tr>
+            <td><i class="far fa-play-circle"></i></td>
+            <td>Samulai</td>
+            <td>Te Vaka</td>
             <td><i class="far fa-heart"></i></td>
           </tr>
         </table>
